@@ -1,0 +1,22 @@
+﻿Object is the base of all the classes in the framework hierarchy.
+object class is available under System
+(FCL/BCL) Sytem.Object
+
+Every  class in C# inherits from Object class.
+If a class is not inheriting any other class then its a direct child of Object class and it inherits some other class then it indirectly inherits from Object Class.
+Purpose: Provide low-level services to derived classes.
+
+2-->Value types & Reference types
+
+By using System.ValueType class, the value types inherit the object class implicitly.
+
+
+struct In32:ValueType:Object
+------------------------------------------------
+
+1) C# classes dont require to declare inheritance from the object class, as inheritance is implicit
+2) every method in the object is available to all the children
+3) Derived classes can and do override the following methods of the Object class
+(ToString,Finalize,Equals,GetHashCode)
+4) Avoid using object type unnecessarily as it costs performance(slower performance)
+ 
